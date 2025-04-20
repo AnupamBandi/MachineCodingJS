@@ -14,14 +14,14 @@ const TodoApp = () => {
   };
 
   const handleSaveTaskInfo = () => {
-    if (taskDescription.trim()) {
+    if (taskDescription.length > 0) {
       const newItem = {
         id: Date.now(),
         description: taskDescription,
         isComplete: false,
         isEditMode: false, // initially false
       };
-      setItems((prevItems) => [...prevItems, newItem]);
+      setItems((prevItems) => [newItem, ...prevItems]);
       setTaskDescription("");
       setShowCreateTaskModal(false);
     }
@@ -103,8 +103,12 @@ const TodoApp = () => {
                     value={taskDescription}
                     onChange={(e) => setTaskDescription(e.target.value)}
                   />
-                  <button onClick={() => handleCancelEdit(item.id)}>Cancel</button>
-                  <button onClick={() => handleSaveEditInfo(item.id)}>Save</button>
+                  <button onClick={() => handleCancelEdit(item.id)}>
+                    Cancel
+                  </button>
+                  <button onClick={() => handleSaveEditInfo(item.id)}>
+                    Save
+                  </button>
                 </div>
               ) : (
                 item.description
@@ -123,7 +127,11 @@ const TodoApp = () => {
         <div style={{ display: "flex", gap: "2rem", flexDirection: "column" }}>
           <div style={{ display: "flex", gap: "2rem" }}>
             <label htmlFor="input">Task Input</label>
-            <input type="text" value={taskDescription} onChange={(e) => handleTaskDesc(e)} />
+            <input
+              type="text"
+              value={taskDescription}
+              onChange={(e) => handleTaskDesc(e)}
+            />
           </div>
           <div
             style={{

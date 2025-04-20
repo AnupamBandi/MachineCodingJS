@@ -50,7 +50,7 @@ const ModalTest = () => {
             onCloseModal={handleOnClose}
             id={1}
             header="Modal Header"
-            body="This is the body"
+            body={null}
             footer={
               <div style={{ background: "pink" }}>This is the footer</div>
             }
