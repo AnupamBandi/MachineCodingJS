@@ -4,16 +4,18 @@ import ModalTest from "./components/CustomModalPopup/modal-test";
 import RandomColorGenerator from "./components/RandomColor";
 import StarRating from "./components/StarRating";
 import ImageCarousel from "./components/ImageCarousel/ImageCarousel";
-import {Greeting} from "./components/CustomModalPopup/modal-test"
+import { Greeting } from "./components/CustomModalPopup/modal-test";
 import LoadMoreData from "./components/LoadMoreData/LoadMoreData";
 import Counter from "./components/Counter/Counter";
 import TodoApp from "./components/TodoApp/TodoApp";
 import CountDownTimer from "./components/CountDownTimer/CountDownTimer";
 import Stopwatch from "./components/Stopwatch/stopwatch";
 import DigitalClock from "./components/DigitalClock/DigitalClock";
+import TicTacToe from "./components/Tic-tac-toe/tic-tac-toe";
+import SearchAutoSuggest from "./components/SearchAutoSuggest/SearchAutoSuggest";
+import FileExplorer from "./components/FIleExplorer/FileExplorer";
 
 function App() {
-  
   return (
     <div className="App">
       {/* <Accordion /> */}
@@ -24,14 +26,16 @@ function App() {
       {/* <Greeting name= 'Anirudh' age = '22'/> */}
       {/* <LoadMoreData /> */}
       {/* <Counter abc=''></Counter> */}
-      <TodoApp />
+      {/* <TicTacToe /> */}
+      {/* <SearchAutoSuggest /> */}
+      {/* <TodoApp /> */}
       {/* <CountDownTimer/> */}
       {/* <DropdownMenu/> */}
       {/* <CountDownTimer/> */}
       {/* <Stopwatch/> */}
-      <DigitalClock />
-      
-
+      {/* <DigitalClock /> */}
+      {/* <Hooks/> */}
+      <FileExplorer />
     </div>
   );
 }
