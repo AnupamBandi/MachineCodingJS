@@ -14,6 +14,7 @@ import DigitalClock from "./components/DigitalClock/DigitalClock";
 import TicTacToe from "./components/Tic-tac-toe/tic-tac-toe";
 import SearchAutoSuggest from "./components/SearchAutoSuggest/SearchAutoSuggest";
 import FileExplorer from "./components/FIleExplorer/FileExplorer";
+import Otp from "./components/Otp/Otp";
 
 function App() {
   return (
@@ -35,7 +36,8 @@ function App() {
       {/* <Stopwatch/> */}
       {/* <DigitalClock /> */}
       {/* <Hooks/> */}
-      <FileExplorer />
+      {/* <FileExplorer /> */}
+      <Otp/>
     </div>
   );
 }
