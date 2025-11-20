@@ -17,6 +17,8 @@ import FileExplorer from "./components/FIleExplorer/FileExplorer";
 import Otp from "./components/Otp/Otp";
 import MultiStepCompnent from "./components/MultiStepForm/MultiStepCompnent";
 import { FormProvider } from "./components/MultiStepForm/FormContext";
+import ToastDemo from "./components/ToastNotification/ToastDemo";
+import { ToastProvider } from "./components/ToastNotification/ToastContext";
 
 function App() {
   return (
@@ -38,10 +40,12 @@ function App() {
       {/* <DigitalClock /> */}
       {/* <Hooks/> */}
       {/* <FileExplorer /> */}
-      <Otp/>
-      <FormProvider>
+      {/* <Otp/> */}
+      {/* <ToastNotification/> */}
+      <ToastProvider>{<ToastDemo />}</ToastProvider>
+      {/* <FormProvider>
         <MultiStepCompnent />
-      </FormProvider>
+      </FormProvider> */}
     </div>
   );
 }
