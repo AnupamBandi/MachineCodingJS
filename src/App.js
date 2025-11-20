@@ -15,6 +15,8 @@ import TicTacToe from "./components/Tic-tac-toe/tic-tac-toe";
 import SearchAutoSuggest from "./components/SearchAutoSuggest/SearchAutoSuggest";
 import FileExplorer from "./components/FIleExplorer/FileExplorer";
 import Otp from "./components/Otp/Otp";
+import MultiStepCompnent from "./components/MultiStepForm/MultiStepCompnent";
+import { FormProvider } from "./components/MultiStepForm/FormContext";
 
 function App() {
   return (
@@ -30,7 +32,6 @@ function App() {
       {/* <TicTacToe /> */}
       {/* <SearchAutoSuggest /> */}
       {/* <TodoApp /> */}
-      {/* <CountDownTimer/> */}
       {/* <DropdownMenu/> */}
       {/* <CountDownTimer/> */}
       {/* <Stopwatch/> */}
@@ -38,6 +39,9 @@ function App() {
       {/* <Hooks/> */}
       {/* <FileExplorer /> */}
       <Otp/>
+      <FormProvider>
+        <MultiStepCompnent />
+      </FormProvider>
     </div>
   );
 }
