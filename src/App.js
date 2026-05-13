@@ -19,6 +19,7 @@ import MultiStepCompnent from "./components/MultiStepForm/MultiStepCompnent";
 import { FormProvider } from "./components/MultiStepForm/FormContext";
 import ToastDemo from "./components/ToastNotification/ToastDemo";
 import { ToastProvider } from "./components/ToastNotification/ToastContext";
+import DebouncedSearchBar from "./components/DebouncedSearchBar/DebouncedSearchBar";
 
 function App() {
   return (
@@ -42,10 +43,11 @@ function App() {
       {/* <FileExplorer /> */}
       {/* <Otp/> */}
       {/* <ToastNotification/> */}
-      <ToastProvider>{<ToastDemo />}</ToastProvider>
+      {/* <ToastProvider>{<ToastDemo />}</ToastProvider> */}
       {/* <FormProvider>
         <MultiStepCompnent />
       </FormProvider> */}
+      <DebouncedSearchBar />
     </div>
   );
 }
